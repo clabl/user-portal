@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Chemlab LTD - User Portal</title>
+
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
+            rel="stylesheet"
+        />
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css" />
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            td {
+                align-items: right;
+                text-align: -webkit-right;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fh5co-page">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <aside
+                id="fh5co-aside"
+                role="complementary"
+                class="border js-fullheight"
+            >
+                <h1 id="fh5co-logo"><a href="index.html">CHEMLAB</a></h1>
+                <nav id="fh5co-main-menu" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="reports.html">Reports</a>
+                        </li>
+                        <li class="fh5co-active">
+                            <a href="deliveries.html">Deliveries</a>
+                        </li>
+                        <li>
+                            <a href="reportsannual.html">Annual Reports</a>
+                        </li>
+                        <li>
+                            <a href="catalogue.html">catalogue</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="fh5co-footer">
+                    <p>
+                        <small
+                            >&copy; Chemlab (LTD). All Rights Reserved.</small
+                        >
+                    </p>
+                    <p><small id="id"></small></p>
+                    <p><a href="#" id="signout">Sign Out</a></p>
+                </div>
+            </aside>
+
+            <div id="fh5co-main">
+                <div class="fh5co-narrow-content">
+                    <h2
+                        class="fh5co-heading animate-box"
+                        data-animate-effect="fadeInLeft"
+                    >
+                        Your Reports
+                        <input
+                            type="button"
+                            class="btn btn-primary btn-md"
+                            id="loaddatamain"
+                            value="Re-load Data"
+                            style="display: none"
+                        />
+                    </h2>
+                    <div id="report" class="row row-bottom-padded-md">
+                        <center>
+                            <label
+                                class="
+                                    block
+                                    text-gray-700 text-sm
+                                    font-bold
+                                    mb-2
+                                "
+                                for="Companyname"
+                            >
+                                CONTENT OF THE REPORT -
+                                <span id="reportType"></span>
+                            </label>
+                        </center>
+                        <br />
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 20%">Invoice Number</th>
+                                    <td id="invoiceNumber"></td>
+                                </tr>
+                                <tr>
+                                    <th>Company Name</th>
+                                    <td id="companyName"></td>
+                                </tr>
+                                <tr>
+                                    <th>Scheduled Time</th>
+                                    <td id="scheduledTime"></td>
+                                </tr>
+                                <tr>
+                                    <th>PDF Report</th>
+                                    <td id="pdfReport"></td>
+                                </tr>
+                                <tr>
+                                    <th>Boat Number</th>
+                                    <td id="boatNumber"></td>
+                                </tr>
+                                <tr>
+                                    <th>Delivered Time</th>
+                                    <td id="deliveredTime"></td>
+                                </tr>
+                                <tr>
+                                    <th>Photo Confirmation</th>
+                                    <td
+                                        style="
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: end;
+                                        "
+                                        id="photoConfirmation"
+                                    ></td>
+                                </tr>
+                                <tr>
+                                    <th>Signature</th>
+                                    <td id="signature"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="js/main.js"></script>
+
+        <script type="module" src="cjs/auth.js"></script>
+        <script type="module" src="cjs/main.js"></script>
+    </body>
+</html>
